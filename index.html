@@ -7,7 +7,7 @@
     <meta name="author" content="ThanhDieuTV">
     <link rel="shortcut icon" href="./public/assets/img/logo.avif" type="image/x-icon">
     <meta name="keywords" content="findidfb,findidfb.com,findidfbcom,findfbid,find id fb,find my fb id,find fb id,find id page" />
-    <title>Find Info Facebook</title>
+    <title>Find ID FB | Find Info Facebook | Get UID Fb</title>
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- theme css -->
@@ -58,7 +58,7 @@
         <div class="nk-footer nk-footer-fluid bg-lighter">
             <div class="container-xl">
                 <div class="nk-footer-wrap">
-                    <div class="nk-footer-copyright"> &copy; donguyenduykhuong - @2024 </div>
+                    <div class="nk-footer-copyright"> &copy; donguyenduykhuong - @2021 </div>
                 </div>
             </div>
         </div>
@@ -73,5 +73,50 @@
     <script src="//cdn.thanhdieu.com/dialog/wstoast/ws.toast.js"></script>
     <!-- boostrap js -->
     <script src="//cdn.staticfile.org/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
-</body>
+<script type='text/javascript'>
+  //<![CDATA[
+  // JavaScript Document
+  var message = "NoRightClicking";
+  function defeatIE() {
+      if (document.all) {
+          (message);
+          return false;
+      }
+  }
+  function defeatNS(e) {
+      if (document.layers || (document.getElementById && !document.all)) {
+          if (e.which == 2 || e.which == 3) {
+              (message);
+              return false;
+          }
+      }
+  }
+  if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = defeatNS;
+  } else {
+      document.onmouseup = defeatNS;
+      document.oncontextmenu = defeatIE;
+  }
+  document.oncontextmenu = new Function("return false")
+      //]]>
+</script>
+<script type='text/javascript'>
+  checkCtrl = false $('*').keydown(function(e) {
+      if (e.keyCode == '17') {
+          checkCtrl = false
+      }
+  }).keyup(function(ev) {
+      if (ev.keyCode == '17') {
+          checkCtrl = false
+      }
+  }).keydown(function(event) {
+      if (checkCtrl) {
+          if (event.keyCode == '85') {
+              return false;
+          }
+      }
+  })
+</script>
+<body onkeydown="return false"></body>
 </html>
